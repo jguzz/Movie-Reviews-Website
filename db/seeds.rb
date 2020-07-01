@@ -27,7 +27,7 @@ resp = RestClient.get('https://api.themoviedb.org/3/genre/movie/list?api_key=4d5
 data = JSON.parse(resp)
 genres = data["genres"]
 
-while page <= 10
+while page <= 400
   #Making the request to the movie database 
   resp = RestClient.get("https://api.themoviedb.org/3/movie/popular/?api_key=#{api_key}&language=en-US&page=#{page}")
   #parse 
@@ -58,7 +58,7 @@ end
 end
 
 #Creates 40 dummy reviews
-40.times do 
+400.times do 
   Review.create({
     rating: Faker::Number.between(from: 1, to: 10),
     description: Faker::Hipster.paragraph(sentence_count: 3, supplemental: false, random_sentences_to_add: 8),
@@ -69,7 +69,7 @@ end
 end
 
 #Creates 30 dummy Watchlists
-30.times do 
+40.times do 
   Watchlist.create({
       movie_id: Movie.all.sample.id,
       user_id: User.all.sample.id
