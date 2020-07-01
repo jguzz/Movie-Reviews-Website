@@ -50,7 +50,7 @@ To contribute to Movie Reviews, follow these steps:
 Alternatively see the GitHub documentation on [creating a pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
 
 ## Credits
-Code written by...
+Code written by... <br/>
 Joseph A Guzzardo 
 - [LinkedIn](https://www.linkedin.com/in/joseph-a-guzzardo/)
 - [Github](https://github.com/jguzz)
